@@ -107,7 +107,7 @@ Cybersecurity TODO
 ## :mag_right: Research
 
 <details>
-    <summary> Agnostic Obsession </summary>
+    <summary> Liquid computing </summary>
 
 ### Liquid computing
 
