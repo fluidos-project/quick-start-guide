@@ -42,19 +42,12 @@ The most up-to-date documentation about the project, the overall architecture, a
 
 ## :classical_building: The Fluidos Architecture
 
-### All Fluidos
-![](https://raw.githubusercontent.com/fluidos-project/node)    
-
 ### Fluidos Node
-![](https://raw.githubusercontent.com/fluidos-project)
+<div><img src=".assets/img/fluidos-node.png" style="max-width: 50%;"/></div>
 
 
 ## :desktop_computer: Software components
 Currently available components:
-
-- FLUIDOS node: a component that can consist of either a single device or a set of devices, primarily serving as a representation of a Kubernetes node. It is managed by a singular Kubernetes Control Plane. For additional information, kindly consult the [FLUIDOS node repository](https://github.com/fluidos-project/node)
-- FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
-
 
 <details>
     <summary> Fluidos Node </summary>
