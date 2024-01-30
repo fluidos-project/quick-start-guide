@@ -47,12 +47,13 @@ The most up-to-date documentation about the project, the overall architecture, a
 
 
 ## :desktop_computer: Software components
-Currently available components:
+
+### Currently available components
 
 <details>
     <summary> Fluidos Node </summary>
 
--A component that can consist of either a single device or a set of devices, primarily serving as a representation of a Kubernetes node. It is managed by a singular Kubernetes Control Plane. For additional information, kindly consult the [FLUIDOS node repository](https://github.com/fluidos-project/node)
+- A component that can consist of either a single device or a set of devices, primarily serving as a representation of a Kubernetes node. It is managed by a singular Kubernetes Control Plane. For additional information, kindly consult the [FLUIDOS node repository](https://github.com/fluidos-project/node)
 
 </details>
 
@@ -60,7 +61,16 @@ Currently available components:
 <details>
     <summary> Fluidos at the edge</summary>
 
--FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
+- FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
+
+</details>
+
+### Current standalone components
+
+<details>
+    <summary> Cyber Deception </summary>
+
+- A component to provide Cloud Native Cyber Deception as a service, thus enhancing the overall security of the FLUIDOS ecosystem. For additional information, kindly consult the [Cyber Deception repository](https://github.com/fluidos-project/cyber-deception)
 
 </details>
 
@@ -72,7 +82,7 @@ This section summarizes the basic steps to reach a minimal setup of the availabl
 
 ### Fluidos Node
 
--Explore the FLUIDOS node with our step-by-step guide to effortlessly set up a FLUIDOS Node testbed using KIND (Kubernetes in Docker), which represents the simplest method to install this software on your local machine. [Begin your journey here.](https://github.com/fluidos-project/node/tree/main/testbed/kind)
+- Explore the FLUIDOS node with our step-by-step guide to effortlessly set up a FLUIDOS Node testbed using KIND (Kubernetes in Docker), which represents the simplest method to install this software on your local machine. [Begin your journey here.](https://github.com/fluidos-project/node/tree/main/testbed/kind)
 
 </details>
 
@@ -81,16 +91,7 @@ This section summarizes the basic steps to reach a minimal setup of the availabl
 
 ### Fluidos at the edge
 
--A minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
-
-</details>
-
-<details>
-    <summary> Fluidos Cybersecurity </summary>
-
-### Fluidos Cybersecurity
-
-Cybersecurity TODO
+- A minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
 
 </details>
 
