@@ -70,7 +70,7 @@ The most up-to-date documentation about the project, the overall architecture, a
 <details>
     <summary> Cyber Deception </summary>
 
-- A component to provide Cloud Native Cyber Deception as a service, thus enhancing the overall security of the FLUIDOS ecosystem. For additional information, kindly consult the [Cyber Deception repository](https://github.com/fluidos-project/cyber-deception)
+- A component to provide Cloud Native Cyber Deception as a service, thus enhancing the overall security of the FLUIDOS ecosystem. For additional information, check the [Cyber Deception repository](https://github.com/fluidos-project/cyber-deception).
 
 </details>
 
@@ -78,11 +78,11 @@ The most up-to-date documentation about the project, the overall architecture, a
 This section summarizes the basic steps to reach a minimal setup of the available FLUIDOS components.
 
 <details>
-    <summary>**Fluidos Node**</summary>
+    <summary> Fluidos Node </summary>
 
 ### Fluidos Node
 
-- Explore the FLUIDOS node with our step-by-step guide to effortlessly set up a FLUIDOS Node testbed using KIND (Kubernetes in Docker), which represents the simplest method to install this software on your local machine. [Begin your journey here.](https://github.com/fluidos-project/node/tree/main/testbed/kind)
+- You can set up a FLUIDOS Node testbed using KIND (Kubernetes in Docker), which represents the simplest method to install this software on your local machine. [Begin your journey here.](https://github.com/fluidos-project/node/tree/main/testbed/kind).
 
 </details>
 
