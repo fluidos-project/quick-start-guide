@@ -78,7 +78,7 @@ The most up-to-date documentation about the project, the overall architecture, a
 This section summarizes the basic steps to reach a minimal setup of the available FLUIDOS components.
 
 <details>
-    <summary> Fluidos Node </summary>
+    <summary> ### Fluidos Node </summary>
 
 ### Fluidos Node
 
