@@ -81,7 +81,7 @@ The most up-to-date documentation about the project, the overall architecture, a
 
 - kubectl FLUIDOS plugin:
     This project provides an extension (plugin) to kubectl to seamlessly interact with FLUIDOS components, namely meta-orchestrator(s).
-    The project is developed and python, and acts as a bridge between traditional kubernetes requests and the one processed by the model-based meta orchestrator.
+    The project is developed using Python, and it acts as a bridge between traditional kubernetes requests and the one processed by the model-based meta orchestrator.
     Note that the pluging also allows interaction with the MSPL-based meta-orchestrator, thus providing a developer a single tool for transparently interacting with the FLUIDOS components.
     For additional information, kindly consult the [kubectl FLUIDOS plugin](https://github.com/fluidos-project/kubectl-fluidos-plugin/).
 
