@@ -18,21 +18,21 @@
 |---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
 | Node build      |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/build.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/build.yaml)
 | Node Artifacts     |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/check_artifacts.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/check_artifacts.yaml)
-| Node Helm Docs     |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml) 
-| Node Linting    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/lint.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/lint.yaml) 
-| Node Build Deployment    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment) 
+| Node Helm Docs     |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml)
+| Node Linting    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/lint.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/lint.yaml)
+| Node Build Deployment    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment)
 
 
  :construction: <sub>Work in Progress (WIP)</sub>
 
 </div>
 
- 
+
 ## :bulb: About
 
 The IT landscape has evolved into a world of hyperconnectivity, where devices and information systems communicate and exchange data on numerous applications. FLUIDOS will leverage the enormous, unused processing capacity at the edge, scattered across heterogeneous edge devices that struggle to integrate with each other and to form a seamless computing continuum coherently.
 
-### :star: Give a Star! 
+### :star: Give a Star!
 
 Support this research by **giving it a star**. Thanks!
 
@@ -51,7 +51,7 @@ The most up-to-date documentation about the project, the overall architecture, a
 ### Currently available components
 
 <details>
-    <summary> Fluidos Node </summary>
+    <summary> FLUIDOS Node </summary>
 
 - A component that can consist of either a single device or a set of devices, primarily serving as a representation of a Kubernetes node. It is managed by a singular Kubernetes Control Plane. For additional information, kindly consult the [FLUIDOS node repository](https://github.com/fluidos-project/node)
 
@@ -59,9 +59,31 @@ The most up-to-date documentation about the project, the overall architecture, a
 
 
 <details>
-    <summary> Fluidos at the edge</summary>
+    <summary> FLUIDOS at the edge</summary>
 
 - FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
+
+</details>
+
+<details>
+    <summary> FLUIDOS MetaOrchestration</summary>
+
+- FLUIDOS meta-orchestration:
+    This component provides functionality to perform intent-based meta orchestration of workloads within FLUIDOS continuum.
+    The component relies on the functionality provided by the FLUIDOS node (see above) to perform resource discovery and acquisition.
+    The project itself is extensible, allowing the definition of specific models, or rule/heuristics, for the orchestration of the deployed workloads.
+    For additional information, kindly consult the [FLUIDOS model-based Meta Orchestration repository](https://github.com/fluidos-project/fluidos-modelbased-metaorchestrator/).
+
+</details>
+
+<details>
+    <summary> kubectl FLUIDOS plugin</summary>
+
+- kubectl FLUIDOS plugin:
+    This project provides an extension (plugin) to kubectl to seamlessly interact with FLUIDOS components, namely meta-orchestrator(s).
+    The project is developed using Python, and it acts as a bridge between traditional kubernetes requests and the one processed by the model-based meta orchestrator.
+    Note that the pluging also allows interaction with the MSPL-based meta-orchestrator, thus providing a developer a single tool for transparently interacting with the FLUIDOS components.
+    For additional information, kindly consult the [kubectl FLUIDOS plugin](https://github.com/fluidos-project/kubectl-fluidos-plugin/).
 
 </details>
 
