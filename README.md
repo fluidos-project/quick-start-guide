@@ -61,7 +61,7 @@ The most up-to-date documentation about the project, the overall architecture, a
 <details>
     <summary> FLUIDOS at the edge</summary>
 
-- FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
+- FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge. For additional information, kindly consult the [FLUIDOS at the Edge repository](https://github.com/fluidos-project/fluidos-edge)
 
 </details>
 
