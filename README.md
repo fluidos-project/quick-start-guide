@@ -129,8 +129,8 @@ This section summarizes the basic steps to reach a minimal setup of the availabl
 <details>
     <summary> Fluidos Identity Management</summary>
 
-### Fluidos Identity Management:
-    To build a functional demo of the component, check the following guide [Fluidos Identity Management Guideline](https://github.com/fluidos-project/idm-fluidos-aries-framework-go/blob/main/README.md).
+### Fluidos Identity Management
+- To build a functional demo of the component, check the following guide [Fluidos Identity Management Guideline](https://github.com/fluidos-project/idm-fluidos-aries-framework-go/blob/main/README.md).
 
 </details>
 
