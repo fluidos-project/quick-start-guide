@@ -87,6 +87,15 @@ The most up-to-date documentation about the project, the overall architecture, a
 
 </details>
 
+<details>
+    <summary> Fluidos Identity Management</summary>
+
+- Fluidos Identity Management:
+    This component consists in an Aries agent modified for use dp-abc cryptography combined with Hyperledger Fabric as VDR to provide a very powerful interface when working with DID's, issuing VCredentials or using smart contracts. 
+    These tools will help to secure any scenario that may occur in FLUIDOS and bring us an API with which we can, among other things; issue VCredentials, create DIDs for FLUIDS entities, create Verifiable Presentations from VCredentials and verify said VCredentials/VPresentations.For additional information, kindly consult the [Fluidos Identity Management Aries Framework](https://github.com/fluidos-project/idm-fluidos-aries-framework-go).
+
+</details>
+
 ### Current standalone components
 
 <details>
@@ -114,6 +123,14 @@ This section summarizes the basic steps to reach a minimal setup of the availabl
 ### Fluidos at the edge
 
 - A minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
+
+</details>
+
+<details>
+    <summary> Fluidos Identity Management</summary>
+
+### Fluidos Identity Management
+- To build a functional demo of the component, check the following guide [Fluidos Identity Management Guideline](https://github.com/fluidos-project/idm-fluidos-aries-framework-go/blob/main/README.md).
 
 </details>
 
