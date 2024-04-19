@@ -46,7 +46,7 @@ The most up-to-date documentation about the project, the overall architecture, a
 <div><img src=".assets/img/fluidos-node.png" style="max-width: 50%;"/></div>
 
 
-## :desktop_computer: Software components
+## :desktop_computer: Software components(1st Release of the integrated MetaOS)
 
 ### Currently available components
 
@@ -55,6 +55,8 @@ The most up-to-date documentation about the project, the overall architecture, a
 
 - A component that can consist of either a single device or a set of devices, primarily serving as a representation of a Kubernetes node. It is managed by a singular Kubernetes Control Plane. For additional information, kindly consult the [FLUIDOS node repository](https://github.com/fluidos-project/node)
 
+- [FLUIDOS Node 1st Release](https://github.com/fluidos-project/node/releases/tag/v0.0.3)
+
 </details>
 
 
@@ -62,6 +64,8 @@ The most up-to-date documentation about the project, the overall architecture, a
     <summary> FLUIDOS at the edge</summary>
 
 - FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge. For additional information, kindly consult the [FLUIDOS at the Edge repository](https://github.com/fluidos-project/fluidos-edge)
+
+- [FLUIDOS at the edge 1st Release](https://github.com/fluidos-project/fluidos-edge/releases/tag/v0.1)
 
 </details>
 
@@ -74,6 +78,8 @@ The most up-to-date documentation about the project, the overall architecture, a
     The project itself is extensible, allowing the definition of specific models, or rule/heuristics, for the orchestration of the deployed workloads.
     For additional information, kindly consult the [FLUIDOS model-based Meta Orchestration repository](https://github.com/fluidos-project/fluidos-modelbased-metaorchestrator/).
 
+- [FLUIDOS meta-orchestration 1st Release](https://github.com/fluidos-project/fluidos-modelbased-metaorchestrator/releases/tag/v0.0.3)
+
 </details>
 
 <details>
@@ -85,14 +91,18 @@ The most up-to-date documentation about the project, the overall architecture, a
     Note that the pluging also allows interaction with the MSPL-based meta-orchestrator, thus providing a developer a single tool for transparently interacting with the FLUIDOS components.
     For additional information, kindly consult the [kubectl FLUIDOS plugin](https://github.com/fluidos-project/kubectl-fluidos-plugin/).
 
+- [kubectl FLUIDOS plugin 1st Release](https://github.com/fluidos-project/kubectl-fluidos-plugin/releases/tag/0.0.1)
+
 </details>
 
 <details>
-    <summary> Fluidos Identity Management</summary>
+    <summary> FLUIDOS Identity Management</summary>
 
-- Fluidos Identity Management:
+- FLUIDOS Identity Management:
     This component consists in an Aries agent modified for use dp-abc cryptography combined with Hyperledger Fabric as VDR to provide a very powerful interface when working with DID's, issuing VCredentials or using smart contracts. 
     These tools will help to secure any scenario that may occur in FLUIDOS and bring us an API with which we can, among other things; issue VCredentials, create DIDs for FLUIDS entities, create Verifiable Presentations from VCredentials and verify said VCredentials/VPresentations.For additional information, kindly consult the [Fluidos Identity Management Aries Framework](https://github.com/fluidos-project/idm-fluidos-aries-framework-go).
+
+- [FLUIDOS Identity Management 1st Release](https://github.com/fluidos-project/idm-fluidos-aries-framework-go/releases/tag/v.1.0.0)
 
 </details>
 
@@ -102,6 +112,8 @@ The most up-to-date documentation about the project, the overall architecture, a
     <summary> Cyber Deception </summary>
 
 - A component to provide Cloud Native Cyber Deception as a service, thus enhancing the overall security of the FLUIDOS ecosystem. For additional information, check the [Cyber Deception repository](https://github.com/fluidos-project/cyber-deception).
+
+- [Cyber Deception 1st Release](https://github.com/fluidos-project/cyber-deception/releases/tag/v0.0.1)
 
 </details>
 
