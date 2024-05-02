@@ -108,8 +108,7 @@ The most up-to-date documentation about the project, the overall architecture, a
 <details>
     <summary> Serverless Function</summary>
 
-- We leverage [fission.io](https://fission.io/), a framework for serverless functions on Kubernetes, to seamlessly execute functions in a multi-cluster environment like Liqo or FLUIDOS. This enables developers to deploy lightweight, event-driven code that scales dynamically on demand. A detailed description of the installation steps is provided in the following repo
-  [Serverless in multi-cluster environment](https://github.com/fluidos-project/multi-cluster-serverless-functions).
+- We leverage [fission.io](https://fission.io/), a framework for serverless functions on Kubernetes, to seamlessly execute functions in a multi-cluster environment based on FLUIDOS (or Liqo). This enables developers to deploy lightweight, event-driven code that scales dynamically on demand. A detailed description of the installation steps is provided at page [Serverless in multi-cluster environment](https://github.com/fluidos-project/multi-cluster-serverless-functions).
 
 </details>
 
