@@ -1,15 +1,5 @@
 <div style="text-align:center"><img src=".assets/img/fluidos-banner.png" style="max-width: 60%;"/></div>
 
-
-<p align="center">
-  <a href="#bulb-about">About</a> &nbsp;&bull;&nbsp;
-  <a href="#classical_building-the-fluidos-architecture">The Fluidos Architecture</a> &nbsp;&bull;&nbsp;
-  <a href="#computer-click-and-play-playground">Click-and-play playground</a> &nbsp;&bull;&nbsp;
-  <a href="#mag_right-research">Research</a> &nbsp;&bull;&nbsp;
-  <a href="#toolbox-tech-stack">Tech Stack</a> &nbsp;&bull;&nbsp;
-  <a href="#book-references-and-resources">Resources</a>
-</p>
-
 <br>
 
 <div align="center">
@@ -22,15 +12,12 @@
 | Node Linting    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/lint.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/lint.yaml)
 | Node Build Deployment    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment)
 
-
- :construction: <sub>Work in Progress (WIP)</sub>
-
 </div>
 
 
 ## :bulb: About
 
-The IT landscape has evolved into a world of hyperconnectivity, where devices and information systems communicate and exchange data on numerous applications. FLUIDOS will leverage the enormous, unused processing capacity at the edge, scattered across heterogeneous edge devices that struggle to integrate with each other and to form a seamless computing continuum coherently.
+The IT landscape has evolved into a world of hyperconnectivity, where devices and information systems communicate and exchange data on numerous applications. FLUIDOS leverages the enormous, unused processing capacity available anywhere (edge devices, edge of the network, fog, cloud), scattered across devices, servers and cluster that struggle to integrate with each other and to form a seamless computing continuum.
 
 ### :star: Give a Star!
 
@@ -39,11 +26,6 @@ Support this research by **giving it a star**. Thanks!
 ## Documentation
 
 The most up-to-date documentation about the project, the overall architecture, and the current implementation of the components is available in the [Docs](https://github.com/fluidos-project/Docs) repository.
-
-## :classical_building: The Fluidos Architecture
-
-### Fluidos Node
-<div><img src=".assets/img/fluidos-node.png" style="max-width: 50%;"/></div>
 
 
 ## :desktop_computer: Software components (1st Release of the integrated MetaOS)
@@ -153,3 +135,5 @@ This section summarizes the basic steps to reach a minimal setup of the availabl
 
 
 ## :world_map: Roadmap
+
+Jan 2025: Upgrade of the entire FLUIDOS meta OS to Liqo 1.0.
