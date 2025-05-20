@@ -112,7 +112,7 @@ This section summarizes the basic steps to reach a minimal setup of the availabl
 
 ### Fluidos Node
 
-- You can set up a FLUIDOS Node testbed using KIND (Kubernetes in Docker), which represents the simplest method to install this software on your local machine. [Begin your journey here.](https://github.com/fluidos-project/node/tree/main/testbed/kind).
+- You can set up a FLUIDOS Node testbed using KIND (Kubernetes in Docker), which represents the simplest method to install this software on your local machine. [Begin your journey here.](https://github.com/fluidos-project/node/blob/main/docs/installation/installation.md).
 
 </details>
 
