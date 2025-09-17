@@ -86,16 +86,18 @@ The most up-to-date documentation about the project, the overall architecture, a
 
 </details>
 
-### Current standalone components
-
 <details>
     <summary> Cyber Deception </summary>
 
 - A component to provide Cloud Native Cyber Deception as a service, thus enhancing the overall security of the FLUIDOS ecosystem. For additional information, check the [Cyber Deception repository](https://github.com/fluidos-project/cyber-deception).
 
 - [Cyber Deception 1st Release](https://github.com/fluidos-project/cyber-deception/releases/tag/v0.0.1)
+- [Cyber Deception 2st Release](https://github.com/fluidos-project/cyber-deception/releases/tag/v0.0.2)
 
 </details>
+
+### Current standalone components
+
 
 <details>
     <summary> Serverless Function</summary>
