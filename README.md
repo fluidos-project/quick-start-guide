@@ -4,20 +4,20 @@
 
 <div align="center">
 
-|Service|Command Stack|
-|---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
-| Node build      |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/build.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/build.yaml)
-| Node Artifacts     |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/check_artifacts.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/check_artifacts.yaml)
-| Node Helm Docs     |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml)
-| Node Linting    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/lint.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/lint.yaml)
-| Node Build Deployment    |          [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment)
+| Service               |                                                                                                      CI Status                                                                                                      |
+| --------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Node build            |                   [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/build.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/build.yaml)                   |
+| Node Artifacts        |         [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/check_artifacts.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/check_artifacts.yaml)         |
+| Node Helm Docs        | [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/check-helm-documentation.yml) |
+| Node Linting          |                    [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/lint.yaml/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/lint.yaml)                    |
+| Node Build Deployment | [![Node - Command Stack](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/fluidos-project/node/actions/workflows/pages/pages-build-deployment) |
 
 </div>
 
-
 ## :bulb: About
 
-The IT landscape has evolved into a world of hyperconnectivity, where devices and information systems communicate and exchange data on numerous applications. FLUIDOS leverages the enormous, unused processing capacity available anywhere (edge devices, edge of the network, fog, cloud), scattered across devices, servers and cluster that struggle to integrate with each other and to form a seamless computing continuum.
+The IT landscape is hyperconnected: devices and information systems continuously exchange data across edge, fog, and cloud. **FLUIDOS** taps into unused compute anywhere—edge devices, network edge, fog, and cloud—to create a seamless **computing continuum**.  
+This repository collects quick-starts and links to the Release 2 components, playgrounds, and reproducible use cases.
 
 ### :star: Give a Star!
 
@@ -25,117 +25,173 @@ Support this research by **giving it a star**. Thanks!
 
 ## Documentation
 
-The most up-to-date documentation about the project, the overall architecture, and the current implementation of the components is available in the [Docs](https://github.com/fluidos-project/Docs) repository.
+The latest project-wide docs (architecture, concepts, and component guides) live in the **[Docs repository](https://github.com/fluidos-project/Docs)**.  
+For hands-on setup, each component repo also includes quick-start instructions referenced below.
 
+## :desktop_computer: Software components (Release 2 of the integrated MetaOS)
 
-## :desktop_computer: Software components (1st Release of the integrated MetaOS)
-
-### Currently available components
-
-<details>
-    <summary> FLUIDOS Node </summary>
-
-- A component that can consist of either a single device or a set of devices, primarily serving as a representation of a Kubernetes cluster. It is managed by a single Kubernetes Control Plane. For additional information, check the [FLUIDOS node repository](https://github.com/fluidos-project/node).
-
-- [FLUIDOS Node 1st Release](https://github.com/fluidos-project/node/releases/tag/v0.0.3)
-
-</details>
-
+### Core components (Release 2)
 
 <details>
-    <summary> FLUIDOS at the edge</summary>
+  <summary> FLUIDOS Node </summary>
 
-- FLUIDOS at the edge: a minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge. For additional information, check the [FLUIDOS at the Edge repository](https://github.com/fluidos-project/fluidos-edge).
-
-- [FLUIDOS at the edge 1st Release](https://github.com/fluidos-project/fluidos-edge/releases/tag/v0.1)
-
+- Base component (one Kubernetes control plane per node) with **Broker** and **telemetry endpoint in REAR**, plus integration with **Liqo v1.0.0** for stable federation and peering.
+- Repo: https://github.com/fluidos-project/node
 </details>
 
 <details>
-    <summary> FLUIDOS MetaOrchestration</summary>
+  <summary> FLUIDOS Edge </summary>
 
-- FLUIDOS meta-orchestration:
-    This component provides functionality to perform intent-based meta orchestration of workloads within FLUIDOS continuum.
-    The component relies on the functionality provided by the FLUIDOS node (see above) to perform resource discovery and acquisition.
-    The project itself is extensible, allowing the definition of specific models, or rule/heuristics, for the orchestration of the deployed workloads. For additional information, check the [FLUIDOS model-based Meta Orchestration repository](https://github.com/fluidos-project/fluidos-modelbased-metaorchestrator/).
-
-- [FLUIDOS meta-orchestration 1st Release](https://github.com/fluidos-project/fluidos-modelbased-metaorchestrator/releases/tag/v0.0.3)
-
+- Minimal architecture for low-resource boards (e.g., STM) using **KubeEdge**, with documented layers (Cloud Core / Meta Edge / Deep Edge / Micro Edge).
+- Repo: https://github.com/fluidos-project/fluidos-edge
 </details>
 
 <details>
-    <summary> kubectl FLUIDOS plugin</summary>
+  <summary> FLUIDOS MetaOrchestration </summary>
 
-- kubectl FLUIDOS plugin:
-    This project provides an extension (plugin) to kubectl to seamlessly interact with FLUIDOS components, namely meta-orchestrator(s).
-    The project is developed using Python, and it acts as a bridge between traditional kubernetes requests and the one processed by the model-based meta orchestrator.
-    Note that the pluging also allows interaction with the MSPL-based meta-orchestrator, thus providing a developer a single tool for transparently interacting with the FLUIDOS components. For additional information, check the [kubectl FLUIDOS plugin](https://github.com/fluidos-project/kubectl-fluidos-plugin/).
-
-- [kubectl FLUIDOS plugin 1st Release](https://github.com/fluidos-project/kubectl-fluidos-plugin/releases/tag/0.0.1)
-
+- **Model-based, intent-driven meta-orchestration**; clearer local vs. remote semantics, extended logging, Python 3.10 compatibility, and added tests.
+- Repo: https://github.com/fluidos-project/fluidos-modelbased-metaorchestrator
 </details>
 
 <details>
-    <summary> FLUIDOS Identity Management</summary>
+  <summary> kubectl FLUIDOS plugin </summary>
 
-- FLUIDOS Identity Management:
-    This component consists in an Aries agent modified for use dp-abc cryptography combined with Hyperledger Fabric as VDR to provide a very powerful interface when working with DID's, issuing VCredentials or using smart contracts. 
-    These tools will help to secure any scenario that may occur in FLUIDOS and bring us an API with which we can, among other things; issue VCredentials, create DIDs for FLUIDS entities, create Verifiable Presentations from VCredentials and verify said VCredentials/VPresentations. For additional information, check the [Fluidos Identity Management Aries Framework](https://github.com/fluidos-project/idm-fluidos-aries-framework-go).
-
-- [FLUIDOS Identity Management 1st Release](https://github.com/fluidos-project/idm-fluidos-aries-framework-go/releases/tag/v.1.0.0)
-
+- `kubectl` extension to interact with the model-based meta-orchestrator and MSPL-based paths.
+- Repo: https://github.com/fluidos-project/kubectl-fluidos-plugin
 </details>
 
 <details>
-    <summary> Cyber Deception </summary>
+  <summary> FLUIDOS Identity Management (PSM, DID/VC, JWT) </summary>
 
-- A component to provide Cloud Native Cyber Deception as a service, thus enhancing the overall security of the FLUIDOS ecosystem. For additional information, check the [Cyber Deception repository](https://github.com/fluidos-project/cyber-deception).
+- **Privacy & Security Manager (PSM)** integrated with REAR: DID-backed JWT contracts (producer signs, consumer co-signs), VCs/VPs with p-ABC and ZKPs, XACML/ABAC via XADATU, PEP-proxied endpoints.
+- Repo: https://github.com/fluidos-project/idm-fluidos-aries-framework-go
+</details>
 
-- [Cyber Deception 1st Release](https://github.com/fluidos-project/cyber-deception/releases/tag/v0.0.1)
-- [Cyber Deception 2st Release](https://github.com/fluidos-project/cyber-deception/releases/tag/v0.0.2)
+<details>
+  <summary> FLUIDOS Cyber Deception (CDaaS) </summary>
 
+- **Decepto**-based Cloud-Native Cyber Deception advertised via **FLAVOR** and activated by **intents/MSPL**; supports Meta-Orchestrator and Bastion flows, with an all-in-one testbed.
+- Repo: https://github.com/fluidos-project/cyber-deception
+</details>
+
+<details>
+  <summary> FLUIDOS Energy Predictors </summary>
+
+- Daily node energy demand prediction (CNN), with dataset tooling and plotting helpers.
+- Repo: https://github.com/fluidos-project/fluidos-energy-predictor
+</details>
+
+<details>
+  <summary> Security Enhancements & Optional Features (WP5) </summary>
+
+- Three security categories: **Integrated-by-Design (e.g., PSM)**, **Security Applications** (e.g., BeaCon, FLAD), and **Security Node Capabilities** (e.g., MAGI, TEE, Cyber Deception).
+- Repo: https://github.com/fluidos-project/security-features
+</details>
+
+### New in Release 2
+
+<details>
+  <summary> FLUIDOS Node Dashboard </summary>
+
+- **GUI** to browse/reserve/buy resources over **REAR**; deployed via Kubernetes manifests, exposed with **NodePort** services for backend/frontend.
+- Repo: https://github.com/fluidos-project/fluidos-node-dashboard
+</details>
+
+<details>
+  <summary> Telemetry & OpenTelemetry Collector </summary>
+
+- Full observability stack: **kube-state-metrics**, **Node Exporter**, **OTEL Collector**, **Prometheus**, **Grafana**, **Alertmanager**; plus **plugin-api-otel** for dynamic OTEL pipeline management.
+- Telemetry repo: https://github.com/fluidos-project/telemetry
+- OTEL API repo: https://github.com/fluidos-project/plugin-api-otel
 </details>
 
 ### Current standalone components
 
-
 <details>
-    <summary> Serverless Function</summary>
+  <summary> Serverless Function </summary>
 
-- We leverage [fission.io](https://fission.io/), a framework for serverless functions on Kubernetes, to seamlessly execute functions in a multi-cluster environment based on FLUIDOS (or Liqo). This enables developers to deploy lightweight, event-driven code that scales dynamically on demand. A detailed description of the installation steps is provided at page [Serverless in multi-cluster environment](https://github.com/fluidos-project/multi-cluster-serverless-functions).
-
+- Multi-cluster serverless with **Fission** on FLUIDOS/Liqo.
+- Guide: https://github.com/fluidos-project/multi-cluster-serverless-functions
 </details>
 
 ## :computer: Click-and-play playground
-This section summarizes the basic steps to reach a minimal setup of the available FLUIDOS components.
+
+Quick paths to spin up minimal FLUIDOS setups on your machine or lab.
 
 <details>
-    <summary> Fluidos Node </summary>
+  <summary> FLUIDOS Node </summary>
 
-### Fluidos Node
+### FLUIDOS Node
 
-- You can set up a FLUIDOS Node testbed using KIND (Kubernetes in Docker), which represents the simplest method to install this software on your local machine. [Begin your journey here.](https://github.com/fluidos-project/node/blob/main/docs/installation/installation.md).
-
+- Set up a FLUIDOS Node testbed using **KIND** (Kubernetes in Docker), the simplest local install path.  
+ 👉 [Begin here](https://github.com/fluidos-project/node/blob/main/docs/installation/installation.md).
 </details>
 
 <details>
-    <summary> Fluidos at the edge </summary>
+  <summary> FLUIDOS at the Edge </summary>
 
-### Fluidos at the edge
+### FLUIDOS at the Edge
 
-- A minimal architecture for running the FLUIDOS components at the edge of the network on some STM boards, leveraging KubeEdge.
-
+- Minimal architecture to run FLUIDOS components on constrained boards (e.g., STM) using **KubeEdge**.  
+ 👉 [Project repo](https://github.com/fluidos-project/fluidos-edge).
 </details>
 
 <details>
-    <summary> Fluidos Identity Management</summary>
+  <summary> FLUIDOS Identity Management </summary>
 
-### Fluidos Identity Management
-- To build a functional demo of the component, check the following guide [Fluidos Identity Management Guideline](https://github.com/fluidos-project/idm-fluidos-aries-framework-go/blob/main/README.md).
+### FLUIDOS Identity Management
 
-</details>  
+- Build a functional demo with DIDs, Verifiable Credentials, and REAR integration.  
+ 👉 [Guideline](https://github.com/fluidos-project/idm-fluidos-aries-framework-go/blob/main/README.md).
+</details>
 
+<details>
+  <summary> FLUIDOS Node Dashboard (Release 2) </summary>
+
+### FLUIDOS Node Dashboard
+
+- Web UI to browse, reserve, and purchase resources through **REAR**; deploy via Kubernetes manifests and expose via **NodePort** services.  
+ 👉 [Project repo](https://github.com/fluidos-project/fluidos-node-dashboard)
+</details>
+
+<details>
+  <summary> Telemetry & OTEL Collector (Release 2) </summary>
+
+### Telemetry & OTEL
+
+- Observability stack (kube-state-metrics, Node Exporter, **OTEL Collector**, Prometheus, Grafana, Alertmanager) and **plugin API** to manage OTEL pipelines.  
+ 👉 Telemetry: https://github.com/fluidos-project/telemetry  
+ 👉 OTEL API: https://github.com/fluidos-project/plugin-api-otel
+</details>
+
+## :joystick: Playgrounds (integrated demonstrators)
+
+The playgrounds are reproducible testbeds that integrate Node, Meta-Orchestrator, Identity/Security, and Observability, and capture KPI evidence.
+
+- **FLUIDOS CoreNet (UMU)** — Security & privacy by design (PSM, DID/VC, REAR contracts and PEP-protected endpoints).  
+  Repo: (see D9.3 for replication guide)
+
+- **FLUIDOS LiveGrid (POLITO)** — Heterogeneous Cloud↔Edge continuum with centralized observability; validated on x86 and ARM (e.g., Tiesse routers); Edge→Cloud (LLM+GPU) and Cloud→Edge scenarios.  
+  Repos: edge infra installer (POLITO), plus FLUIDOS Node
+
+- **FLUIDOS FlexSim (FBK)** — Large-scale simulation (KWOK) integrating Node/Liqo/Meta-Orchestrator to stress-test scheduling and security.
+
+- **FLUIDOS SmartCity (Martel)** — “Smart City in a box” pipeline showing FLUIDOS in a real urban scenario, with replication guidelines.
+
+## :test_tube: Use cases (reproducible)
+
+- **Intelligent Power Grid** — 3 FLUIDOS nodes; **PDC + Grid State Estimation** as FLUIDOSDeployments; **Percona XtraDB Cluster** (synchronous replication); Prometheus/Grafana dashboards; failure-injection scripts; automated K3s/FLUIDOS deployment.  
+  Repo: https://github.com/fluidos-project/intelligent-power-grid-use-case
+
+- **Smart Viticulture** — Offloading vineyard image processing to capable edge; provider/consumer setup scripts; image pipeline; packaged as **release v1.0.0**.  
+  Repo: https://github.com/fluidos-project/smart-viticulture-uc
+
+- **Robotic Logistics** — Dynamic offloading across robots/edge/cloud; orchestration modules and **FLUIDOS-RB-Theron** for execution/middleware; containerized components and automation to reproduce experiments.  
+  Repos:  
+  • https://github.com/fluidos-project/robotic-logistics-use-case  
+  • https://github.com/fluidos-project/fluidos-rb-theron
 
 ## :world_map: Roadmap
 
-Jan 2025: Upgrade of the entire FLUIDOS meta OS to Liqo 1.0.
+- ✅ **Jan 2025**: Upgrade of the FLUIDOS MetaOS to **Liqo 1.0** (completed).
+- ✅ **Oct 2025**: **Release 2** delivered (Node Dashboard, Telemetry/OTEL, R2 component updates, new playgrounds & reproducible use cases).
