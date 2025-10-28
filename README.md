@@ -35,7 +35,7 @@ For hands-on setup, each component repo also includes quick-start instructions r
 <details>
   <summary> FLUIDOS Node </summary>
 
-- Base component (one Kubernetes control plane per node) with **Broker** and **telemetry endpoint in REAR**, plus integration with **Liqo v1.0.0** for stable federation and peering.
+- Base component (one Kubernetes control plane per node) with **telemetry endpoint in REAR** and integration with **Liqo v1.0.0** for stable federation and peering. WAN discovery is available via the optional **FLUIDOS Broker** component.
 - Repo: https://github.com/fluidos-project/node
 </details>
 
@@ -164,12 +164,24 @@ Quick paths to spin up minimal FLUIDOS setups on your machine or lab.
  👉 OTEL API: https://github.com/fluidos-project/plugin-api-otel
 </details>
 
+<details>
+  <summary> FLUIDOS Broker </summary>
+
+### FLUIDOS Broker
+
+- Optional WAN-discovery hub for FLUIDOS nodes built on **RabbitMQ** (secure TLS), matching **Announcements** (node properties) with **Rules** (desiderata) to enable selective visibility across the WAN.  
+ 👉 Broker: https://github.com/fluidos-project/broker
+</details>
+
 ## :joystick: Playgrounds (integrated demonstrators)
 
 The playgrounds are reproducible testbeds that integrate Node, Meta-Orchestrator, Identity/Security, and Observability, and capture KPI evidence.
 
+- **FLUIDOS Broker (TOP–IX)** — WAN discovery between FLUIDOS nodes via a secure message-routing hub (**RabbitMQ**) where nodes publish **Announcements** (capabilities/properties like throughput, latency, geo, custom K/V) and query with **Rules** (desired parameters/thresholds). The Broker dynamically matches Rules to Announcements to automate discovery and selective visibility across the WAN. Multiple brokers can coexist; TLS authentication protects integrity and confidentiality.  
+  Repo: https://github.com/fluidos-project/broker
+
 - **FLUIDOS CoreNet (UMU)** — Security & privacy by design (PSM, DID/VC, REAR contracts and PEP-protected endpoints).  
-  Repo: (see D9.3 for replication guide)
+  Repo: https://github.com/fluidos-project/FLUIDOS-CoreNet
 
 - **FLUIDOS LiveGrid (POLITO)** — Heterogeneous Cloud↔Edge continuum with centralized observability; validated on x86 and ARM (e.g., Tiesse routers); Edge→Cloud (LLM+GPU) and Cloud→Edge scenarios.  
   Repos: edge infra installer (POLITO), plus FLUIDOS Node
