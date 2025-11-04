@@ -176,7 +176,9 @@ The playgrounds are reproducible testbeds that integrate Node, Meta-Orchestrator
 
 - **FLUIDOS FlexSim (FBK)** — Large-scale simulation (KWOK) integrating Node/Liqo/Meta-Orchestrator to stress-test scheduling and security.
 
-- **FLUIDOS SmartCity (Martel)** — “Smart City in a box” pipeline showing FLUIDOS in a real urban scenario, with replication guidelines.
+- **FLUIDOS SmartCity (MARTEL)** — “Smart City in a box” pipeline showing FLUIDOS in a real urban scenario, with replication guidelines.
+
+- **FLUIDOS Broker (TOPIX)** — Acts as a communication and routing hub where nodes can publish their announcements in order to make themselves visible to other participants in the FluidOS network.
 
 ## :test_tube: Use cases (reproducible)
 
