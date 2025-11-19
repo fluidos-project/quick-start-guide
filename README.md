@@ -180,6 +180,8 @@ The playgrounds are reproducible testbeds that integrate Node, Meta-Orchestrator
 
 - **FLUIDOS Broker (TOPIX)** — Acts as a communication and routing hub where nodes can publish their announcements in order to make themselves visible to other participants in the FluidOS network.
 
+- **FLUIDOS SensorFlow(HMU)** — Demonstrates node–edge–IoT integration by connecting cloud clusters with edge gateways and real IoT devices to enable end-to-end data acquisition, processing and secure sharing.
+
 ## :test_tube: Use cases (reproducible)
 
 - **Intelligent Power Grid** — 3 FLUIDOS nodes; **PDC + Grid State Estimation** as FLUIDOSDeployments; **Percona XtraDB Cluster** (synchronous replication); Prometheus/Grafana dashboards; failure-injection scripts; automated K3s/FLUIDOS deployment.  
